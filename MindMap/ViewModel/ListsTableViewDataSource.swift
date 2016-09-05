@@ -14,18 +14,49 @@ enum TableViewCellIdentifiers: String {
 }
 
 class ListsTableViewDataSource: NSObject, UITableViewDataSource {
+
+    var lists: [List] = ListStore.store.lists
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ListStore.store.lists.count
+        guard lists.count > 0 else {
+            return 1
+        }
+        
+        return lists.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifiers.listTableViewCell.rawValue) else {
+        guard lists.count > 0 else {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "noListsTableViewCell") {
+                return cell
+            }
+            
             return UITableViewCell()
         }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifiers.listTableViewCell.rawValue) as? ListTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.titleLabel.text = lists[indexPath.row].title
         return cell
     }
     
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
+    }
+}
+
+class ListsTableViewDelegate: NSObject, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Row \(indexPath.row) selected.")
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard let dataSource = tableView.dataSource as? ListsTableViewDataSource,
+            dataSource.lists.count > 0 else
+        {
+            return CGFloat(150)
+        }
+        
+        return CGFloat(44.0)
     }
 }

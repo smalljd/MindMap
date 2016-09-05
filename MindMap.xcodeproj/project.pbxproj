@@ -16,15 +16,21 @@
 		1F01045C1D72404700509034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F01045A1D72404700509034 /* LaunchScreen.storyboard */; };
 		1F0104671D72404700509034 /* MindMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0104661D72404700509034 /* MindMapTests.swift */; };
 		1F0104721D72404700509034 /* MindMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0104711D72404700509034 /* MindMapUITests.swift */; };
+		1F0642F91D7E231C00E213E7 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0642F81D7E231C00E213E7 /* ListItemTableViewCell.swift */; };
+		1F0643011D7E296500E213E7 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0643001D7E296500E213E7 /* Messages.framework */; };
+		1F0643041D7E296500E213E7 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0643031D7E296500E213E7 /* MessagesViewController.swift */; };
+		1F0643071D7E296500E213E7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0643051D7E296500E213E7 /* MainInterface.storyboard */; };
+		1F0643091D7E296500E213E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0643081D7E296500E213E7 /* Assets.xcassets */; };
+		1F06430D1D7E296500E213E7 /* MindMap Messages.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F0642FE1D7E296400E213E7 /* MindMap Messages.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F1D62F71D72463200FB2753 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1D62F61D72463200FB2753 /* List.swift */; };
 		1F2260461D7246A4000A8DA2 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2260451D7246A4000A8DA2 /* ListItem.swift */; };
-		1F2260481D7246E1000A8DA2 /* ListViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2260471D7246E1000A8DA2 /* ListViews.storyboard */; };
 		1F22604A1D724708000A8DA2 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2260491D724708000A8DA2 /* ListViewModel.swift */; };
 		1F22604C1D72476B000A8DA2 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F22604B1D72476B000A8DA2 /* ListItemViewModel.swift */; };
 		1F2B7B591D724B0D00CCD772 /* ListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B581D724B0D00CCD772 /* ListStore.swift */; };
 		1F2B7B5B1D7252BD00CCD772 /* ListsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5A1D7252BD00CCD772 /* ListsTableViewDataSource.swift */; };
 		1F2B7B5D1D72545300CCD772 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5C1D72545300CCD772 /* Storyboards.swift */; };
 		1F2B7B5F1D72575900CCD772 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5E1D72575900CCD772 /* ListTableViewCell.swift */; };
+		1FC8CC541D7E18FD00D8A98B /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC8CC531D7E18FD00D8A98B /* NewListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +48,28 @@
 			remoteGlobalIDString = 1F0104481D72404600509034;
 			remoteInfo = MindMap;
 		};
+		1F06430B1D7E296500E213E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F0104411D72404600509034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F0642FD1D7E296400E213E7;
+			remoteInfo = "MindMap Messages";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F0643111D7E296500E213E7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F06430D1D7E296500E213E7 /* MindMap Messages.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F0104491D72404600509034 /* MindMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,15 +87,22 @@
 		1F01046D1D72404700509034 /* MindMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0104711D72404700509034 /* MindMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMapUITests.swift; sourceTree = "<group>"; };
 		1F0104731D72404700509034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0642F81D7E231C00E213E7 /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItemTableViewCell.swift; path = View/ListItemTableViewCell.swift; sourceTree = "<group>"; };
+		1F0642FE1D7E296400E213E7 /* MindMap Messages.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MindMap Messages.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0643001D7E296500E213E7 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		1F0643031D7E296500E213E7 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		1F0643061D7E296500E213E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1F0643081D7E296500E213E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F06430A1D7E296500E213E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F1D62F61D72463200FB2753 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = List.swift; path = Model/List.swift; sourceTree = "<group>"; };
 		1F2260451D7246A4000A8DA2 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItem.swift; path = Model/ListItem.swift; sourceTree = "<group>"; };
-		1F2260471D7246E1000A8DA2 /* ListViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ListViews.storyboard; path = View/ListViews.storyboard; sourceTree = "<group>"; };
 		1F2260491D724708000A8DA2 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewModel.swift; path = ViewModel/ListViewModel.swift; sourceTree = "<group>"; };
 		1F22604B1D72476B000A8DA2 /* ListItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItemViewModel.swift; path = ViewModel/ListItemViewModel.swift; sourceTree = "<group>"; };
 		1F2B7B581D724B0D00CCD772 /* ListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListStore.swift; path = Stores/ListStore.swift; sourceTree = "<group>"; };
 		1F2B7B5A1D7252BD00CCD772 /* ListsTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListsTableViewDataSource.swift; path = ViewModel/ListsTableViewDataSource.swift; sourceTree = "<group>"; };
 		1F2B7B5C1D72545300CCD772 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storyboards.swift; path = Stores/Storyboards.swift; sourceTree = "<group>"; };
 		1F2B7B5E1D72575900CCD772 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewCell.swift; path = View/ListTableViewCell.swift; sourceTree = "<group>"; };
+		1FC8CC531D7E18FD00D8A98B /* NewListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewListViewController.swift; path = ViewControllers/NewListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +127,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F0642FB1D7E296400E213E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0643011D7E296500E213E7 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +144,8 @@
 				1F01044B1D72404600509034 /* MindMap */,
 				1F0104651D72404700509034 /* MindMapTests */,
 				1F0104701D72404700509034 /* MindMapUITests */,
+				1F0643021D7E296500E213E7 /* MindMap Messages */,
+				1F0642FF1D7E296500E213E7 /* Frameworks */,
 				1F01044A1D72404600509034 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +156,7 @@
 				1F0104491D72404600509034 /* MindMap.app */,
 				1F0104621D72404700509034 /* MindMapTests.xctest */,
 				1F01046D1D72404700509034 /* MindMapUITests.xctest */,
+				1F0642FE1D7E296400E213E7 /* MindMap Messages.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,8 +170,6 @@
 				1F1D62F31D72459100FB2753 /* View */,
 				1F1D62F21D72458600FB2753 /* Model */,
 				1F01044C1D72404600509034 /* AppDelegate.swift */,
-				1F0104511D72404700509034 /* ListsViewController.swift */,
-				1F0104531D72404700509034 /* ListItemsViewController.swift */,
 				1F0104581D72404700509034 /* Assets.xcassets */,
 				1F01045A1D72404700509034 /* LaunchScreen.storyboard */,
 				1F01045D1D72404700509034 /* Info.plist */,
@@ -153,6 +196,25 @@
 			path = MindMapUITests;
 			sourceTree = "<group>";
 		};
+		1F0642FF1D7E296500E213E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F0643001D7E296500E213E7 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F0643021D7E296500E213E7 /* MindMap Messages */ = {
+			isa = PBXGroup;
+			children = (
+				1F0643031D7E296500E213E7 /* MessagesViewController.swift */,
+				1F0643051D7E296500E213E7 /* MainInterface.storyboard */,
+				1F0643081D7E296500E213E7 /* Assets.xcassets */,
+				1F06430A1D7E296500E213E7 /* Info.plist */,
+			);
+			path = "MindMap Messages";
+			sourceTree = "<group>";
+		};
 		1F1D62F21D72458600FB2753 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				1F0104551D72404700509034 /* Main.storyboard */,
-				1F2260471D7246E1000A8DA2 /* ListViews.storyboard */,
 				1F2B7B5E1D72575900CCD772 /* ListTableViewCell.swift */,
+				1F0642F81D7E231C00E213E7 /* ListItemTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -185,6 +247,9 @@
 		1F1D62F51D7245F300FB2753 /* VIew Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F0104511D72404700509034 /* ListsViewController.swift */,
+				1F0104531D72404700509034 /* ListItemsViewController.swift */,
+				1FC8CC531D7E18FD00D8A98B /* NewListViewController.swift */,
 			);
 			name = "VIew Controllers";
 			sourceTree = "<group>";
@@ -208,10 +273,12 @@
 				1F0104451D72404600509034 /* Sources */,
 				1F0104461D72404600509034 /* Frameworks */,
 				1F0104471D72404600509034 /* Resources */,
+				1F0643111D7E296500E213E7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F06430C1D7E296500E213E7 /* PBXTargetDependency */,
 			);
 			name = MindMap;
 			productName = MindMap;
@@ -254,6 +321,23 @@
 			productReference = 1F01046D1D72404700509034 /* MindMapUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1F0642FD1D7E296400E213E7 /* MindMap Messages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F06430E1D7E296500E213E7 /* Build configuration list for PBXNativeTarget "MindMap Messages" */;
+			buildPhases = (
+				1F0642FA1D7E296400E213E7 /* Sources */,
+				1F0642FB1D7E296400E213E7 /* Frameworks */,
+				1F0642FC1D7E296400E213E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MindMap Messages";
+			productName = "MindMap Messages";
+			productReference = 1F0642FE1D7E296400E213E7 /* MindMap Messages.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -284,6 +368,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1F0104481D72404600509034;
 					};
+					1F0642FD1D7E296400E213E7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GDP24D6J8J;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1F0104441D72404600509034 /* Build configuration list for PBXProject "MindMap" */;
@@ -302,6 +391,7 @@
 				1F0104481D72404600509034 /* MindMap */,
 				1F0104611D72404700509034 /* MindMapTests */,
 				1F01046C1D72404700509034 /* MindMapUITests */,
+				1F0642FD1D7E296400E213E7 /* MindMap Messages */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +402,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F01045C1D72404700509034 /* LaunchScreen.storyboard in Resources */,
-				1F2260481D7246E1000A8DA2 /* ListViews.storyboard in Resources */,
 				1F0104591D72404700509034 /* Assets.xcassets in Resources */,
 				1F0104571D72404700509034 /* Main.storyboard in Resources */,
 			);
@@ -332,6 +421,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F0642FC1D7E296400E213E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0643091D7E296500E213E7 /* Assets.xcassets in Resources */,
+				1F0643071D7E296500E213E7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -341,11 +439,13 @@
 			files = (
 				1F2260461D7246A4000A8DA2 /* ListItem.swift in Sources */,
 				1F2B7B5F1D72575900CCD772 /* ListTableViewCell.swift in Sources */,
+				1F0642F91D7E231C00E213E7 /* ListItemTableViewCell.swift in Sources */,
 				1F22604C1D72476B000A8DA2 /* ListItemViewModel.swift in Sources */,
 				1F2B7B5B1D7252BD00CCD772 /* ListsTableViewDataSource.swift in Sources */,
 				1F0104501D72404700509034 /* MindMap.xcdatamodeld in Sources */,
 				1F2B7B5D1D72545300CCD772 /* Storyboards.swift in Sources */,
 				1F22604A1D724708000A8DA2 /* ListViewModel.swift in Sources */,
+				1FC8CC541D7E18FD00D8A98B /* NewListViewController.swift in Sources */,
 				1F01044D1D72404600509034 /* AppDelegate.swift in Sources */,
 				1F0104521D72404700509034 /* ListsViewController.swift in Sources */,
 				1F1D62F71D72463200FB2753 /* List.swift in Sources */,
@@ -370,6 +470,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F0642FA1D7E296400E213E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0643041D7E296500E213E7 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -382,6 +490,11 @@
 			isa = PBXTargetDependency;
 			target = 1F0104481D72404600509034 /* MindMap */;
 			targetProxy = 1F01046E1D72404700509034 /* PBXContainerItemProxy */;
+		};
+		1F06430C1D7E296500E213E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F0642FD1D7E296400E213E7 /* MindMap Messages */;
+			targetProxy = 1F06430B1D7E296500E213E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,6 +513,14 @@
 				1F01045B1D72404700509034 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1F0643051D7E296500E213E7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F0643061D7E296500E213E7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -497,6 +618,7 @@
 		1F0104771D72404700509034 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MindMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -509,6 +631,7 @@
 		1F0104781D72404700509034 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MindMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -568,6 +691,38 @@
 			};
 			name = Release;
 		};
+		1F06430F1D7E296500E213E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = GDP24D6J8J;
+				INFOPLIST_FILE = "MindMap Messages/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.small.jeff.MindMap.MindMap-Messages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1F0643101D7E296500E213E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = GDP24D6J8J;
+				INFOPLIST_FILE = "MindMap Messages/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.small.jeff.MindMap.MindMap-Messages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -606,6 +761,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1F06430E1D7E296500E213E7 /* Build configuration list for PBXNativeTarget "MindMap Messages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F06430F1D7E296500E213E7 /* Debug */,
+				1F0643101D7E296500E213E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

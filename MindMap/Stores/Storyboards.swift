@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 enum StoryboardIdentifier: String {
-    case Lists = "ListViews"
     case Main = "Main"
 }
 

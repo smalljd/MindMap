@@ -13,9 +13,32 @@ protocol ListStoreType {
 }
 
 protocol ListStoreUpdatable {
-    func add(list: List)
-    func remove(list: List)
-    func save()
+    mutating func add(list: List)
+    mutating func remove(list: List)
+}
+
+extension ListStore: ListStoreUpdatable {
+    mutating func remove(list: List) {
+        for (index, listValue) in lists.enumerated() where list.dateAdded == listValue.dateAdded {
+            lists.remove(at: index)
+        }
+        
+        for observer in observers {
+            observer.listsUpdated()
+        }
+    }
+
+    mutating func add(list: List) {
+        lists.append(list)
+        for observer in observers {
+            observer.listsUpdated()
+        }
+    }
+
+}
+
+protocol ListStoreObservable {
+    func listsUpdated()
 }
 
 protocol ListRetrievable {
@@ -25,6 +48,7 @@ protocol ListRetrievable {
 
 struct ListStore: ListStoreType {
     var lists = [List]()
-    static let store = ListStore()
+    var observers = [ListStoreObservable]()
+    static var store = ListStore()
     private init() {}
 }
