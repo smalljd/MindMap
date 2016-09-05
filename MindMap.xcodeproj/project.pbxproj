@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F01044D1D72404600509034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01044C1D72404600509034 /* AppDelegate.swift */; };
+		1F0104501D72404700509034 /* MindMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F01044E1D72404700509034 /* MindMap.xcdatamodeld */; };
+		1F0104521D72404700509034 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0104511D72404700509034 /* ListsViewController.swift */; };
+		1F0104541D72404700509034 /* ListItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0104531D72404700509034 /* ListItemsViewController.swift */; };
+		1F0104571D72404700509034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0104551D72404700509034 /* Main.storyboard */; };
+		1F0104591D72404700509034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0104581D72404700509034 /* Assets.xcassets */; };
+		1F01045C1D72404700509034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F01045A1D72404700509034 /* LaunchScreen.storyboard */; };
+		1F0104671D72404700509034 /* MindMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0104661D72404700509034 /* MindMapTests.swift */; };
+		1F0104721D72404700509034 /* MindMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0104711D72404700509034 /* MindMapUITests.swift */; };
+		1F1D62F71D72463200FB2753 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1D62F61D72463200FB2753 /* List.swift */; };
+		1F2260461D7246A4000A8DA2 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2260451D7246A4000A8DA2 /* ListItem.swift */; };
+		1F2260481D7246E1000A8DA2 /* ListViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2260471D7246E1000A8DA2 /* ListViews.storyboard */; };
+		1F22604A1D724708000A8DA2 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2260491D724708000A8DA2 /* ListViewModel.swift */; };
+		1F22604C1D72476B000A8DA2 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F22604B1D72476B000A8DA2 /* ListItemViewModel.swift */; };
+		1F2B7B591D724B0D00CCD772 /* ListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B581D724B0D00CCD772 /* ListStore.swift */; };
+		1F2B7B5B1D7252BD00CCD772 /* ListsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5A1D7252BD00CCD772 /* ListsTableViewDataSource.swift */; };
+		1F2B7B5D1D72545300CCD772 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5C1D72545300CCD772 /* Storyboards.swift */; };
+		1F2B7B5F1D72575900CCD772 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5E1D72575900CCD772 /* ListTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F0104631D72404700509034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F0104411D72404600509034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F0104481D72404600509034;
+			remoteInfo = MindMap;
+		};
+		1F01046E1D72404700509034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F0104411D72404600509034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F0104481D72404600509034;
+			remoteInfo = MindMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F0104491D72404600509034 /* MindMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F01044C1D72404600509034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F01044F1D72404700509034 /* MindMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MindMap.xcdatamodel; sourceTree = "<group>"; };
+		1F0104511D72404700509034 /* ListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
+		1F0104531D72404700509034 /* ListItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsViewController.swift; sourceTree = "<group>"; };
+		1F0104561D72404700509034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F0104581D72404700509034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F01045B1D72404700509034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F01045D1D72404700509034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0104621D72404700509034 /* MindMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0104661D72404700509034 /* MindMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMapTests.swift; sourceTree = "<group>"; };
+		1F0104681D72404700509034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F01046D1D72404700509034 /* MindMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0104711D72404700509034 /* MindMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMapUITests.swift; sourceTree = "<group>"; };
+		1F0104731D72404700509034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F1D62F61D72463200FB2753 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = List.swift; path = Model/List.swift; sourceTree = "<group>"; };
+		1F2260451D7246A4000A8DA2 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItem.swift; path = Model/ListItem.swift; sourceTree = "<group>"; };
+		1F2260471D7246E1000A8DA2 /* ListViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ListViews.storyboard; path = View/ListViews.storyboard; sourceTree = "<group>"; };
+		1F2260491D724708000A8DA2 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewModel.swift; path = ViewModel/ListViewModel.swift; sourceTree = "<group>"; };
+		1F22604B1D72476B000A8DA2 /* ListItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItemViewModel.swift; path = ViewModel/ListItemViewModel.swift; sourceTree = "<group>"; };
+		1F2B7B581D724B0D00CCD772 /* ListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListStore.swift; path = Stores/ListStore.swift; sourceTree = "<group>"; };
+		1F2B7B5A1D7252BD00CCD772 /* ListsTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListsTableViewDataSource.swift; path = ViewModel/ListsTableViewDataSource.swift; sourceTree = "<group>"; };
+		1F2B7B5C1D72545300CCD772 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storyboards.swift; path = Stores/Storyboards.swift; sourceTree = "<group>"; };
+		1F2B7B5E1D72575900CCD772 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewCell.swift; path = View/ListTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F0104461D72404600509034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F01045F1D72404700509034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F01046A1D72404700509034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F0104401D72404600509034 = {
+			isa = PBXGroup;
+			children = (
+				1F01044B1D72404600509034 /* MindMap */,
+				1F0104651D72404700509034 /* MindMapTests */,
+				1F0104701D72404700509034 /* MindMapUITests */,
+				1F01044A1D72404600509034 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F01044A1D72404600509034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F0104491D72404600509034 /* MindMap.app */,
+				1F0104621D72404700509034 /* MindMapTests.xctest */,
+				1F01046D1D72404700509034 /* MindMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F01044B1D72404600509034 /* MindMap */ = {
+			isa = PBXGroup;
+			children = (
+				1F2B7B571D724ACD00CCD772 /* Stores */,
+				1F1D62F51D7245F300FB2753 /* VIew Controllers */,
+				1F1D62F41D7245B400FB2753 /* View Model */,
+				1F1D62F31D72459100FB2753 /* View */,
+				1F1D62F21D72458600FB2753 /* Model */,
+				1F01044C1D72404600509034 /* AppDelegate.swift */,
+				1F0104511D72404700509034 /* ListsViewController.swift */,
+				1F0104531D72404700509034 /* ListItemsViewController.swift */,
+				1F0104581D72404700509034 /* Assets.xcassets */,
+				1F01045A1D72404700509034 /* LaunchScreen.storyboard */,
+				1F01045D1D72404700509034 /* Info.plist */,
+				1F01044E1D72404700509034 /* MindMap.xcdatamodeld */,
+			);
+			path = MindMap;
+			sourceTree = "<group>";
+		};
+		1F0104651D72404700509034 /* MindMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F0104661D72404700509034 /* MindMapTests.swift */,
+				1F0104681D72404700509034 /* Info.plist */,
+			);
+			path = MindMapTests;
+			sourceTree = "<group>";
+		};
+		1F0104701D72404700509034 /* MindMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F0104711D72404700509034 /* MindMapUITests.swift */,
+				1F0104731D72404700509034 /* Info.plist */,
+			);
+			path = MindMapUITests;
+			sourceTree = "<group>";
+		};
+		1F1D62F21D72458600FB2753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F1D62F61D72463200FB2753 /* List.swift */,
+				1F2260451D7246A4000A8DA2 /* ListItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1F1D62F31D72459100FB2753 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F0104551D72404700509034 /* Main.storyboard */,
+				1F2260471D7246E1000A8DA2 /* ListViews.storyboard */,
+				1F2B7B5E1D72575900CCD772 /* ListTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1F1D62F41D7245B400FB2753 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F2260491D724708000A8DA2 /* ListViewModel.swift */,
+				1F22604B1D72476B000A8DA2 /* ListItemViewModel.swift */,
+				1F2B7B5A1D7252BD00CCD772 /* ListsTableViewDataSource.swift */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		1F1D62F51D7245F300FB2753 /* VIew Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "VIew Controllers";
+			sourceTree = "<group>";
+		};
+		1F2B7B571D724ACD00CCD772 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				1F2B7B581D724B0D00CCD772 /* ListStore.swift */,
+				1F2B7B5C1D72545300CCD772 /* Storyboards.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F0104481D72404600509034 /* MindMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0104761D72404700509034 /* Build configuration list for PBXNativeTarget "MindMap" */;
+			buildPhases = (
+				1F0104451D72404600509034 /* Sources */,
+				1F0104461D72404600509034 /* Frameworks */,
+				1F0104471D72404600509034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindMap;
+			productName = MindMap;
+			productReference = 1F0104491D72404600509034 /* MindMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F0104611D72404700509034 /* MindMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0104791D72404700509034 /* Build configuration list for PBXNativeTarget "MindMapTests" */;
+			buildPhases = (
+				1F01045E1D72404700509034 /* Sources */,
+				1F01045F1D72404700509034 /* Frameworks */,
+				1F0104601D72404700509034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F0104641D72404700509034 /* PBXTargetDependency */,
+			);
+			name = MindMapTests;
+			productName = MindMapTests;
+			productReference = 1F0104621D72404700509034 /* MindMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F01046C1D72404700509034 /* MindMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F01047C1D72404700509034 /* Build configuration list for PBXNativeTarget "MindMapUITests" */;
+			buildPhases = (
+				1F0104691D72404700509034 /* Sources */,
+				1F01046A1D72404700509034 /* Frameworks */,
+				1F01046B1D72404700509034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F01046F1D72404700509034 /* PBXTargetDependency */,
+			);
+			name = MindMapUITests;
+			productName = MindMapUITests;
+			productReference = 1F01046D1D72404700509034 /* MindMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F0104411D72404600509034 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Jeff Small";
+				TargetAttributes = {
+					1F0104481D72404600509034 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GDP24D6J8J;
+						DevelopmentTeamName = "Jeff Small";
+						ProvisioningStyle = Automatic;
+					};
+					1F0104611D72404700509034 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GDP24D6J8J;
+						DevelopmentTeamName = "Jeff Small";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F0104481D72404600509034;
+					};
+					1F01046C1D72404700509034 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GDP24D6J8J;
+						DevelopmentTeamName = "Jeff Small";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F0104481D72404600509034;
+					};
+				};
+			};
+			buildConfigurationList = 1F0104441D72404600509034 /* Build configuration list for PBXProject "MindMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F0104401D72404600509034;
+			productRefGroup = 1F01044A1D72404600509034 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F0104481D72404600509034 /* MindMap */,
+				1F0104611D72404700509034 /* MindMapTests */,
+				1F01046C1D72404700509034 /* MindMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F0104471D72404600509034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F01045C1D72404700509034 /* LaunchScreen.storyboard in Resources */,
+				1F2260481D7246E1000A8DA2 /* ListViews.storyboard in Resources */,
+				1F0104591D72404700509034 /* Assets.xcassets in Resources */,
+				1F0104571D72404700509034 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0104601D72404700509034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F01046B1D72404700509034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F0104451D72404600509034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2260461D7246A4000A8DA2 /* ListItem.swift in Sources */,
+				1F2B7B5F1D72575900CCD772 /* ListTableViewCell.swift in Sources */,
+				1F22604C1D72476B000A8DA2 /* ListItemViewModel.swift in Sources */,
+				1F2B7B5B1D7252BD00CCD772 /* ListsTableViewDataSource.swift in Sources */,
+				1F0104501D72404700509034 /* MindMap.xcdatamodeld in Sources */,
+				1F2B7B5D1D72545300CCD772 /* Storyboards.swift in Sources */,
+				1F22604A1D724708000A8DA2 /* ListViewModel.swift in Sources */,
+				1F01044D1D72404600509034 /* AppDelegate.swift in Sources */,
+				1F0104521D72404700509034 /* ListsViewController.swift in Sources */,
+				1F1D62F71D72463200FB2753 /* List.swift in Sources */,
+				1F0104541D72404700509034 /* ListItemsViewController.swift in Sources */,
+				1F2B7B591D724B0D00CCD772 /* ListStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F01045E1D72404700509034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0104671D72404700509034 /* MindMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0104691D72404700509034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0104721D72404700509034 /* MindMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F0104641D72404700509034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F0104481D72404600509034 /* MindMap */;
+			targetProxy = 1F0104631D72404700509034 /* PBXContainerItemProxy */;
+		};
+		1F01046F1D72404700509034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F0104481D72404600509034 /* MindMap */;
+			targetProxy = 1F01046E1D72404700509034 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F0104551D72404700509034 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F0104561D72404700509034 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F01045A1D72404700509034 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F01045B1D72404700509034 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F0104741D72404700509034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F0104751D72404700509034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F0104771D72404700509034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.MindMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1F0104781D72404700509034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.MindMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1F01047A1D72404700509034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MindMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.MindMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindMap.app/MindMap";
+			};
+			name = Debug;
+		};
+		1F01047B1D72404700509034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MindMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.MindMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindMap.app/MindMap";
+			};
+			name = Release;
+		};
+		1F01047D1D72404700509034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MindMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.MindMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MindMap;
+			};
+			name = Debug;
+		};
+		1F01047E1D72404700509034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MindMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.small.jeff.MindMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MindMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F0104441D72404600509034 /* Build configuration list for PBXProject "MindMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0104741D72404700509034 /* Debug */,
+				1F0104751D72404700509034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0104761D72404700509034 /* Build configuration list for PBXNativeTarget "MindMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0104771D72404700509034 /* Debug */,
+				1F0104781D72404700509034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0104791D72404700509034 /* Build configuration list for PBXNativeTarget "MindMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F01047A1D72404700509034 /* Debug */,
+				1F01047B1D72404700509034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F01047C1D72404700509034 /* Build configuration list for PBXNativeTarget "MindMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F01047D1D72404700509034 /* Debug */,
+				1F01047E1D72404700509034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F01044E1D72404700509034 /* MindMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F01044F1D72404700509034 /* MindMap.xcdatamodel */,
+			);
+			currentVersion = 1F01044F1D72404700509034 /* MindMap.xcdatamodel */;
+			path = MindMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F0104411D72404600509034 /* Project object */;
+}
