@@ -9,11 +9,60 @@
 import UIKit
 import Messages
 
+@IBDesignable class BorderView: UIView {
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor? {
+        didSet {
+            layer.borderColor = borderColor?.cgColor
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+        }
+    }
+}
+
+extension MessagesViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listItems.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "listItemTableViewCell") as? GroceryListTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        cell.contentLabel.text = listItems[indexPath.row]
+        return cell
+    }
+}
+
+
 class MessagesViewController: MSMessagesAppViewController {
+    
+    @IBOutlet weak var newItemTextView: UITextView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addItemView: BorderView!
+    
+    var listItems = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        newItemTextView.layer.borderColor = UIColor.lightGray.cgColor
+        newItemTextView.layer.borderWidth = 0.5
+        newItemTextView.layer.cornerRadius = 5
+        
+        hideNewItemView()
+        
+        tableView.dataSource = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -22,6 +71,48 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     
     // MARK: - Conversation Handling
+    
+    @IBAction func showNewItemButtonTapped(_ sender: AnyObject) {
+        showNewItemView()
+    }
+    
+    func showNewItemView() {
+        addItemView.isHidden = false
+        view.bringSubview(toFront: addItemView)
+    }
+    
+    func hideNewItemView() {
+        addItemView.isHidden = true
+        view.sendSubview(toBack: addItemView)
+        
+    }
+    
+    @IBAction func addListItemTapped(_ sender: AnyObject) {
+        guard newItemTextView.text != nil && !newItemTextView.text.isEmpty else {
+            return
+        }
+        
+        let groceryItem = newItemTextView.text ?? "newitem"
+        listItems.append(groceryItem)
+        newItemTextView.text = ""
+        tableView.reloadData()
+        
+        guard let conversation = activeConversation else {
+            return
+        }
+        
+        sendGroceryList(item: groceryItem, to: conversation)
+    }
+    
+    func sendGroceryList(item: String, to conversation: MSConversation) {
+        let groceryMessage = GroceryListMessage()
+        groceryMessage.groceryListItem = item
+        conversation.insert(groceryMessage, completionHandler: nil)
+    }
+    
+    @IBAction func cancelButtonTapped(_ sender: AnyObject) {
+        hideNewItemView()
+    }
     
     override func willBecomeActive(with conversation: MSConversation) {
         // Called when the extension is about to move from the inactive to active state.
@@ -45,6 +136,14 @@ class MessagesViewController: MSMessagesAppViewController {
         // extension on a remote device.
         
         // Use this method to trigger UI updates in response to the message.
+        guard let groceryListMessage = message as? GroceryListMessage,
+            let groceryItem = groceryListMessage.groceryListItem else
+        {
+            return
+        }
+        
+        listItems.append(groceryItem)
+        tableView.reloadData()
     }
     
     override func didStartSending(_ message: MSMessage, conversation: MSConversation) {

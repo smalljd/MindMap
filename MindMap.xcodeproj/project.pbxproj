@@ -30,6 +30,8 @@
 		1F2B7B5B1D7252BD00CCD772 /* ListsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5A1D7252BD00CCD772 /* ListsTableViewDataSource.swift */; };
 		1F2B7B5D1D72545300CCD772 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5C1D72545300CCD772 /* Storyboards.swift */; };
 		1F2B7B5F1D72575900CCD772 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B7B5E1D72575900CCD772 /* ListTableViewCell.swift */; };
+		1FA3A4DF1D7E346700BCC43F /* GroceryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3A4DE1D7E346700BCC43F /* GroceryListTableViewCell.swift */; };
+		1FA3A4E11D7E3AC700BCC43F /* GroceryListMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3A4E01D7E3AC700BCC43F /* GroceryListMessage.swift */; };
 		1FC8CC541D7E18FD00D8A98B /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC8CC531D7E18FD00D8A98B /* NewListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +104,8 @@
 		1F2B7B5A1D7252BD00CCD772 /* ListsTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListsTableViewDataSource.swift; path = ViewModel/ListsTableViewDataSource.swift; sourceTree = "<group>"; };
 		1F2B7B5C1D72545300CCD772 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storyboards.swift; path = Stores/Storyboards.swift; sourceTree = "<group>"; };
 		1F2B7B5E1D72575900CCD772 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewCell.swift; path = View/ListTableViewCell.swift; sourceTree = "<group>"; };
+		1FA3A4DE1D7E346700BCC43F /* GroceryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewCell.swift; sourceTree = "<group>"; };
+		1FA3A4E01D7E3AC700BCC43F /* GroceryListMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListMessage.swift; sourceTree = "<group>"; };
 		1FC8CC531D7E18FD00D8A98B /* NewListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewListViewController.swift; path = ViewControllers/NewListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +215,8 @@
 				1F0643051D7E296500E213E7 /* MainInterface.storyboard */,
 				1F0643081D7E296500E213E7 /* Assets.xcassets */,
 				1F06430A1D7E296500E213E7 /* Info.plist */,
+				1FA3A4DE1D7E346700BCC43F /* GroceryListTableViewCell.swift */,
+				1FA3A4E01D7E3AC700BCC43F /* GroceryListMessage.swift */,
 			);
 			path = "MindMap Messages";
 			sourceTree = "<group>";
@@ -475,6 +481,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F0643041D7E296500E213E7 /* MessagesViewController.swift in Sources */,
+				1FA3A4E11D7E3AC700BCC43F /* GroceryListMessage.swift in Sources */,
+				1FA3A4DF1D7E346700BCC43F /* GroceryListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +777,7 @@
 				1F0643101D7E296500E213E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
